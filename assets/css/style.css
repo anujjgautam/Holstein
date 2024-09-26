@@ -7404,7 +7404,7 @@ p.checkout-coupon input[type=text]::placeholder {
 /*  00. MODAL CSS START
 /*----------------------------------------*/
 .product__modal {
-  max-width: 900px;
+  max-width: 1226px;
   padding: 20px;
   padding-top: 27px;
 }
