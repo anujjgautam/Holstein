@@ -131,8 +131,8 @@
 .loading-icon .loading-logo{
 	width: 64px;
 	height: 64px;
-	-webkit-animation: ghurche 4s linear infinite -1.2s;
-	animation: ghurche 4s linear infinite -1.2s; 
+	/* -webkit-animation: ghurche 4s linear infinite -1.2s;
+	animation: ghurche 4s linear infinite -1.2s;  */
 	
 }
 	
@@ -143,7 +143,7 @@
 }
 
 	
-@-webkit-keyframes ghurche{
+/* @-webkit-keyframes ghurche{
 	0% { left: 100px; top:0}
 	100% { left: 100px; top:0; }		
 	  
@@ -155,5 +155,5 @@
 100% { 
 	transform: rotate(360deg);
 }
-}	
+}	 */
 	  
