@@ -119,6 +119,43 @@
          z-index: 1;
          /* Place it above the video but below the content */
       }
+
+      /* Floating Buttons Styles */
+      .floating-buttons {
+         position: fixed;
+         bottom: 95px;
+         right: 48px;
+         z-index: 1000;
+         overflow: visible;
+      }
+
+      .floating-btn {
+         display: block;
+         width: 50px;
+         height: 50px;
+         margin-bottom: 10px;
+         border-radius: 50%;
+         overflow: hidden;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s ease;
+      }
+
+      .floating-btn img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      .floating-btn:hover {
+         transform: scale(1.1);
+      }
+
+      @media (max-width: 575px) {
+         .floating-buttons {
+            right: 13px;
+            bottom: 60px;
+         }
+      }
    </style>
 </head>
 
@@ -135,6 +172,22 @@
       </div>
    </div>
    <!-- pre loader area end -->
+
+   <!-- Floating Buttons for Swiggy and Zomato -->
+   <div class="floating-buttons">
+      <a href="" target="_blank" class="floating-btn zomato-btn">
+         <img src="/assets/flaticon/whatsapp-sm.png" alt="Connect On WhatsApp">
+      </a>
+      <a href="" target="_blank" class="floating-btn swiggy-btn">
+         <img src="/assets/flaticon/instagram-sm.png" alt="Connect on Instagram">
+      </a>
+      <a href="" target="_blank" class="floating-btn X-btn">
+         <img src="/assets/flaticon/X-sm.png" alt="Connect on X">
+      </a>
+      <a href="" target="_blank" class="floating-btn linkedin-btn">
+         <img src="/assets/flaticon/linkedin-sm.png" alt="Connect on LinkedIn">
+      </a>
+   </div>
 
    <!-- back to top start -->
    <div class="progress-wrap">
@@ -295,12 +348,14 @@
                </div>
                <div class="col-xxl-7 col-xl-7 col-lg-7 align-items-end">
                   <div class="tp-about-content-1">
-                     <p style="text-align: justify;">Holstein Nutrients is best known as a livestock feed-producing company. It is a sister
+                     <p style="text-align: justify;">Holstein Nutrients is best known as a livestock feed-producing
+                        company. It is a sister
                         concern of MMC Group founded in 2001 under the name of Mahajan Molasses Company.
                         Being a trusted and proud supplier of top-quality raw materials for cattle feed, we started our
                         subsidiary to produce the best quality cattle feed under the brand HOLSTEIN.
                      </p>
-                     <p style="text-align: justify;">As a subsidiary of MMC Group, Holstein benefits from the strength and expertise of our
+                     <p style="text-align: justify;">As a subsidiary of MMC Group, Holstein benefits from the strength
+                        and expertise of our
                         parent company. With MMC's vast experience in processing and supplying key raw
                         materials like molasses, maize, and DORB, we have access to the finest ingredients for
                         balanced cattle feed. This connection allows us to focus on producing the best quality feed
@@ -330,7 +385,7 @@
                   <div class="tp-features-list">
                      <div class="tp-list-item mb-30">
                         <i class="flaticon-wheat-1"></i>
-                        <h5 class="features-title">Organic<br> Products</h5>
+                        <h5 class="features-title">Organic Products</h5>
                      </div>
                      <div class="tp-list-item mb-30">
                         <i class="flaticon-vegetable"></i>
@@ -367,7 +422,7 @@
             <div class="row align-items-center">
                <div class="col-xl-6 col-lg-6">
                   <div class="organic-image">
-                     <img src="assets/img/project/home-bg-2.png" class="img-fluid" alt="">
+                     <img src="assets/img/project/maize-quality-check.png" class="img-fluid" alt="">
                      <div class="organic-meta">
                         <h5>24</h5>
                         <span>Years Of Experience</span>
@@ -388,19 +443,18 @@
                      <h5 class="organic-product-title mt-40">Our Mission</h5>
                      <div class="row g-0">
                         <!-- <div class="col-xl-6 col-lg-6"> -->
-                        <p class="organic-features-info" style="text-align: justify;">At Holstein, our mission is to improve cattle health and
-                           productivity by producing feed that is
-                           rich in high-quality nutrients. We believe that healthy cattle are the foundation of a
-                           successful
-                           farm, and we are committed to producing highly nutritious and best-quality feed for
-                           livestock.
-                           We use carefully selected ingredients that are nutritionally far superior and procured
-                           ethically
-                           from selected regions famous for producing high-quality crops. From this, we formulate
-                           balanced and nutritious feed and aim to enhance livestock well-being and performance. Our
-                           focus is on providing farmers with reliable and effective feed solutions that promote growth,
-                           boost immunity, and contribute to the overall health of their herds. Holstein is committed to
-                           producing quality feed & zero tolerance for compromising animal health.
+                        <p class="organic-features-info" style="text-align: justify;">At Holstein, our mission is to
+                           improve cattle health and productivity by producing feed that is rich in high-quality
+                           nutrients.
+                           We believe that healthy cattle are the foundation of a successful farm, and we are committed
+                           to producing highly nutritious and best-quality feed for livestock. We use carefully selected
+                           ingredients that are nutritionally far superior and procured ethically from selected regions
+                           famous for producing high-quality crops. From this, we formulate balanced and nutritious feed
+                           and aim to enhance livestock well-being and performance. Our focus is on providing farmers
+                           with reliable and effective feed solutions that promote growth, boost immunity, and
+                           contribute
+                           to the overall health of their herds. Holstein is committed to producing quality feed & zero
+                           tolerance for compromising animal health.
                         </p>
                         <!-- </div> -->
                         <!-- <div class="col-xl-6 col-lg-6">
@@ -436,7 +490,8 @@
                      <div class="tp-section-wrap">
                         <span><i class="flaticon-grass"></i></span>
                         <h3 class="tp-section-title">Health and Productivity with Holstein Cattle Feed.</h3>
-                        <p style="text-align: justify;">Holstein Cattle Feed is formulated to meet the nutritional needs of cows, buffaloes, and
+                        <p style="text-align: justify;">Holstein Cattle Feed is formulated to meet the nutritional needs
+                           of cows, buffaloes, and
                            calves, promoting optimal health and productivity. Rich in essential vitamins, minerals, and
                            proteins, it supports higher milk yield, better growth in calves, and overall improved
                            livestock well-being. This premium feed enhances digestion, boosts immunity, and increases
@@ -469,7 +524,8 @@
                         <div class="features-item text-center">
                            <img src="assets/img/features/chosse-4.png" alt="">
                            <h4 class="features-item-title">Best Raw Materials</h4>
-                           <p style="text-align: justify;">The best raw materials for cow cattle feed include grains like corn and barley for energy,
+                           <p style="text-align: justify;">The best raw materials for cow cattle feed include grains
+                              like corn and barley for energy,
                               and soybean meal and alfalfa for protein. Fiber-rich ingredients such as hay and silage
                               support digestion. Adding vitamins and minerals ensures a balanced diet, promoting overall
                               health and productivity.</p>
@@ -484,7 +540,8 @@
                         <div class="features-item text-center">
                            <img src="assets/img/features/funnel.png" alt="">
                            <h4 class="features-item-title">State of the Art Equipments</h4>
-                           <p style="text-align: justify;">We utilizes state-of-the-art equipment that optimize production efficiency and
+                           <p style="text-align: justify;">We utilizes state-of-the-art equipment that optimize
+                              production efficiency and
                               feed quality. Automated mixing systems and precision weighing technologies ensure
                               consistent formulations. These support sustainable practices, promoting healthier
                               livestock. Our quality testing techniques meet the latest global standards.
@@ -500,7 +557,8 @@
                         <div class="features-item text-center">
                            <img src="assets/img/features/chosse-1.png" alt="">
                            <h4 class="features-item-title">Hygenic Warehousing</h4>
-                           <p style="text-align: justify;">Our cattle feed factory prioritizes hygienic warehousing to maintain the quality and
+                           <p style="text-align: justify;">Our cattle feed factory prioritizes hygienic warehousing to
+                              maintain the quality and
                               safety of our products. Equipped with temperature-controlled environments and regular
                               sanitation protocols, our facilities ensure that feed remains free from contaminants,
                               preserving nutritional integrity for optimal livestock health.</p>
@@ -639,7 +697,8 @@
                      <div class="tp-section-wrap tp-section-wrap-video">
                         <span><i class="flaticon-grass"></i></span>
                         <h3 class="tp-section-title">Premium Quality Raw Materials for Superior Cattle Feed</h3>
-                        <p style="text-align: justify;">At the heart of our cattle feed is the use of the finest quality raw materials, carefully
+                        <p style="text-align: justify;">At the heart of our cattle feed is the use of the finest quality
+                           raw materials, carefully
                            selected to ensure optimal nutrition for livestock. We source premium grains, proteins, and
                            essential nutrients to create a balanced and wholesome feed that meets the dietary needs of
                            cattle. Our world-class processing techniques preserve the integrity of these raw materials,
@@ -1061,7 +1120,8 @@
                <div class="col-xl-4 col-lg-4 col-md-4">
                   <div class="footer-widget footer-col-1 mb-40">
                      <h5 class="footer-title mb-35">About Us</h5>
-                     <p style="text-align: justify;">Holstein Nutrients is best known as a livestock feed-producing company. Being a trusted and
+                     <p style="text-align: justify;">Holstein Nutrients is best known as a livestock feed-producing
+                        company. Being a trusted and
                         proud supplier of top-quality raw materials for cattle feed, we started our
                         subsidiary to produce the best quality cattle feed under the brand HOLSTEIN.</p>
                      <!-- <div class="footer-social-icon mt-35">
