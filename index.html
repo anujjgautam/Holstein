@@ -302,7 +302,8 @@
       <!-- banner-area-start -->
       <div class="banner-area pt-200 pb-180">
          <video autoplay muted loop playsinline id="background-video" class="video-bg">
-            <source src="assets/video/hero-section-1-compressed.webm" type="video/webm">
+            <!-- <source src="assets/video/hero-section-1-compressed.webm" type="video/webm" media="only screen and (min-width: 600px)"> -->
+            <source src="assets/video/mobile-video-compressed.mp4" type="video/mp4" id="video-source">
             Your browser does not support the video tag.
          </video>
          <div class="overlay"></div>
@@ -1207,6 +1208,30 @@
    <script src="assets/js/jquery.appear.js"></script>
    <script src="assets/js/jquery.knob.js"></script>
    <script src="assets/js/main.js"></script>
+   <script>
+      // Function to set video source based on screen size
+      function setVideoSource() {
+         const videoElement = document.getElementById("background-video");
+         const videoSource = document.getElementById("video-source");
+
+         if (window.innerWidth <= 767) {
+            // Mobile device
+            videoSource.src = "assets/video/mobile-video-compressed.mp4";
+         } else {
+            // Larger screens
+            videoSource.src = "assets/video/hero-section-1-compressed.webm";
+         }
+
+         // Reload the video to reflect the new source
+         videoElement.load();
+      }
+
+      // Call function on page load
+      window.onload = setVideoSource;
+
+      // Call function on window resize to handle dynamic resizing
+      window.onresize = setVideoSource;
+   </script>
 </body>
 
 </html>
